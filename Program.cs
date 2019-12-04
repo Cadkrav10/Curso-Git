@@ -9,15 +9,17 @@ namespace Produto2
             static void Main(string[] args)
             {
                 //Produto p = new Produto("TV", 1000.0, 10);
-                Console.WriteLine("Entre os dados do produto:");
+                Console.WriteLine("Entre os dados do produto qq um:");
                 Console.Write("Nome: ");
                 string Nome = Console.ReadLine();
                 Console.Write("Preço: ");
                 double Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Console.Write("Quantidade no estoque: ");
-                int Quantidade = int.Parse(Console.ReadLine());
+                //Console.Write("Quantidade no estoque: ");
+                //int Quantidade = int.Parse(Console.ReadLine());
 
-            Produto p = new Produto(Nome, Preco, Quantidade);
+            Produto p = new Produto(Nome, Preco /*, Quantidade*/);
+
+            Produto p2 = new Produto();
 
                 Console.WriteLine();
                 Console.WriteLine("Dados do produto: " + p);
